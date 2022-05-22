@@ -4,6 +4,7 @@ import { useWallet } from '@solana/wallet-adapter-react';
 import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
 import HeadComponent from '../components/Head';
 import Product from '../components/Product';
+import CreateProduct from '../components/CreateProduct';
 
 // Constants
 const TWITTER_HANDLE = '_FWDBUILDS';
@@ -12,6 +13,8 @@ const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 const App = () => {
   // This will fetch the users' public key (wallet address) from any wallet we support
   const { publicKey } = useWallet();
+  const isOwner = ( publicKey ? publicKey.toString() === process.env.NEXT_PUBLIC_OWNER_PUBLIC_KEY : false );
+  const [creating, setCreating] = useState(false);
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -49,9 +52,16 @@ const App = () => {
         <header className="header-container">
           <p className="header"> 👽 Alien Life Pirate Store 👽 </p>
           <p className="sub-text">The only alien pirate store on SolanaPay!</p>
+          {isOwner && (
+            <button className="create-product-button" onClick={() => setCreating(!creating)}>
+              {creating ? "Close" : "Create Product"}
+            </button>
+          )}
         </header>
 
         <main>
+          {/* Item Creation Feature */}
+          {creating && <CreateProduct />}
           {/* We only render the connect button if public key doesn't exist */}
           {publicKey ? renderItemBuyContainer() : renderNotConnectedContainer()}
         </main>

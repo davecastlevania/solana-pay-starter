@@ -1,20 +1,20 @@
 [
-    {
-      "id": 1,
-      "name": "OG Emoji pack",
-      "price": "0.09",
-      "description": "Get this fire emoji pack for only $0.09! Includes 3 hot emojis: Forreal, Flooshed, and Sheesh!",
-      "image_url": "https://i.imgur.com/rVD8bjt.png",
-      "filename": "Emojis.zip",
-      "hash": "QmWWH69mTL66r3H8P4wUn24t1L5pvdTJGUTKBqT11KCHS5"
-    },
-    {
-        "id": 2,
-        "name": "Space Pirates Never Die Vol 1",
-        "price": "0.01",
-        "description": "Name your price matey!",
-        "image_url": "https://images.squarespace-cdn.com/content/v1/54fc8146e4b02a22841f4df7/1525613074695-BJY18X56C2RTM1G6JKR1/johannes-helgeson-jhelgesonspacepirate01.jpg",
-        "filename": "Captain_Kidd_5486.jpeg",
-        "hash": "bafybeihrygbrz347zs7sbs67xvdpuhqjnj4fjankbmiua3iwzmq677y674"
-      }
+  {
+    "id": 2,
+    "name": "Space Pirates Never Die Vol 1",
+    "price": "0.01",
+    "description": "Name your price matey!",
+    "image_url": "https://images.squarespace-cdn.com/content/v1/54fc8146e4b02a22841f4df7/1525613074695-BJY18X56C2RTM1G6JKR1/johannes-helgeson-jhelgesonspacepirate01.jpg",
+    "filename": "Captain_Kidd_5486.jpeg",
+    "hash": "bafybeihrygbrz347zs7sbs67xvdpuhqjnj4fjankbmiua3iwzmq677y674"
+  },
+  {
+    "id": 4,
+    "name": "Donda3",
+    "price": "9.99",
+    "image_url": "https://ca-times.brightspotcdn.com/dims4/default/2168b8f/2147483647/strip/true/crop/1878x2495+0+0/resize/1119x1486!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fe2%2F8f%2F765233d54532b08f8139860db0a4%2Fla-ca-kanye-west-donda-020.JPG",
+    "description": "This is donda 3",
+    "filename": "assets-934a7281da49092b2a477733d067d8a0.zip",
+    "hash": "QmfHTFrWStAEPbHkKcMWtp24fo9AUngiCjNQyCPxqYHyvp"
+  }
 ]
